@@ -1,0 +1,128 @@
+cv:
+  name: Kathy Liang
+  label: Energy markets and policy analyst
+  email: yliang@hks.harvard.edu
+  location: Cambridge, MA
+  image: ""
+  summary: MPP candidate at Harvard Kennedy School working on electricity markets, utility regulation, and grid finance.
+
+  social_networks:
+    - network: GitHub
+      username: KathyLiang44
+    - network: LinkedIn
+      username: kathy-liang-001909265
+
+  sections:
+    Education:
+      - institution: John F. Kennedy School of Government, Harvard University
+        location: Cambridge, MA
+        area: Public Policy
+        studyType: Master in Public Policy (expected)
+        start_date: 2025-08
+        end_date: 2027-05
+        courses: "State & Local Government Policy Design and Delivery; Negotiation & Conflict Resolution; Infrastructure Finance"
+
+      - institution: University of California, Berkeley
+        location: Berkeley, CA
+        area: Environmental Science
+        studyType: B.Sc.
+        start_date: 2021-08
+        end_date: 2025-05
+        courses: "Econometrics; Energy Engineering; Utility Regulation & Ratemaking; Federal and State Energy Policy; Machine Learning"
+        highlights:
+          - "Minor: Energy and Resources"
+
+    Experience:
+      - company: Belfer Center for Science and International Affairs, Harvard Kennedy School
+        position: Data Center Research Assistant (part-time)
+        location: Cambridge, MA
+        start_date: 2026-05
+        end_date: present
+        highlights:
+          - Designed the site-selection framework for a multi-site comparative case study of U.S. data center water consumption and screened candidate sites in Oregon, Arizona, and Utah.
+          - Built case profiles from public records requests, water-rights filings, permits, and utility agreements, and wrote research memos on gaps in local governance of data center water use.
+
+      - company: Office of Sustainability, Town of Acton
+        position: Electrification & Infrastructure Analyst
+        location: Acton, MA
+        start_date: 2026-01
+        end_date: 2026-05
+        highlights:
+          - Analyzed regulatory frameworks, utility incentives, and stakeholder dynamics shaping adoption of non-pipeline alternatives for building electrification, focusing on heat pump pilots in Massachusetts.
+          - Used an LLM to extract data from ratemaking proceedings and built an Excel benefit-cost analysis of infrastructure returns, avoided gas distribution costs, and emissions reductions, in coordination with National Grid and the town.
+
+      - company: Seattle City Light
+        position: Energy Market & Carbon Policy Intern
+        location: Seattle, WA
+        start_date: 2024-05
+        end_date: 2026-08
+        summary: Three summer internships, 2024–2026.
+        highlights:
+          - Represented the utility in RTO stakeholder processes on wholesale market design and governance for EDAM and Markets+ and on GHG compliance mechanisms, and briefed executive leadership on the utility's positions.
+          - Developed the utility's virtual power plant valuation framework, independently building a cost-benefit model to value a million-dollar VPP portfolio, and facilitated a cross-team working group that developed RFP criteria for residential DER deployment.
+          - Led carbon compliance analysis under Washington's Climate Commitment Act, including allowance auction strategy and e-Tag analysis in Excel and Python, saving ratepayers more than $1M.
+          - Wrote internal memos aligning teams on greenhouse gas compliance strategy, and modeled historical e-Tag data to screen fuel mix disclosure compliance risk under CETA.
+
+      - company: Energy Institute at Haas & Opportunity Lab, UC Berkeley
+        position: Energy Economics Researcher
+        location: Berkeley, CA
+        start_date: 2024-09
+        end_date: 2025-05
+        highlights:
+          - Built large datasets of CAISO OASIS nodal prices and outage data, retrieved through the API, to analyze market performance and reliability risk from unplanned power plant outages.
+          - Estimated econometric models of how generator outages and market design affect wholesale price volatility, and translated the findings into implications for CAISO outage and resilience planning.
+
+      - company: California Air Resources Board
+        position: Equitable Housing Decarbonization Research Analyst
+        location: Berkeley, CA
+        start_date: 2024-10
+        end_date: 2025-01
+        highlights:
+          - Led interviews with utilities, contractors, funding agencies, and program implementers on barriers in residential electrification programs, and coded the results to identify systemic gaps.
+          - Wrote reports informing state strategy for aligning program funding cycles and equity requirements.
+
+      - company: Goldman School of Public Policy, UC Berkeley (client projects)
+        position: Energy Policy Research Analyst
+        location: Berkeley, CA
+        start_date: 2023-09
+        end_date: 2024-05
+        highlights:
+          - "California Office of Energy Infrastructure Safety: analyzed utility finance structures, ratemaking proceedings, and regulatory frameworks to identify financing mechanisms that distribute the cost of wildfire mitigation investments equitably."
+          - "California Energy Commission: analyzed federal permitting of interstate transmission, identified the institutional and regulatory barriers delaying projects, and proposed permitting reforms."
+
+    Projects:
+      - name: Financing long-duration storage in California
+        summary: "Financing the Clean Energy Transition, Harvard Kennedy School. Built a 20-year project finance model for a 500 MW / 50 GWh iron-air battery and tested five policy levers; found the clean firm capacity contract price that equity returns hinge on."
+        end_date: 2026
+      - name: Optimizing offshore wind siting in California
+        summary: "Project lead. CE 295, UC Berkeley (with Sophie Castillo, Gabe Hiestand, Paola Lorusso, and Whitley Rummel). Built a Python optimization model scoring offshore turbine sites on wind output against wildlife, shipping, and grid-infrastructure penalties, and compared the results with the CEC's AB 525 sea space."
+        end_date: 2024
+      - name: Predicting interconnection queue outcomes
+        summary: "ER 131, UC Berkeley (with Claire Liu, Ke Hu, and Sindre Iversen Carlsen; mentored by CAISO's Lead Interconnection Specialist). Trained classifiers on CAISO queue data to predict which generation requests withdraw or reach operation."
+        end_date: 2023
+
+    Volunteer:
+      - company: Local Clean Energy Alliance
+        position: Energy Equity Advocate
+        location: Oakland, CA
+        start_date: 2023-10
+        end_date: 2025-05
+        highlights:
+          - Coordinated community engagement on energy resilience and off-grid solutions across three counties, facilitating multilingual workshops with 100+ participants.
+          - Secured funding from Ava Community Energy for community outreach on rooftop solar and battery systems, and trained volunteers in canvassing with local governments and NGOs.
+
+    Skills:
+      - name: Analysis
+        icon: fa-solid fa-chart-line
+        keywords: "Python (pandas, scikit-learn, optimization), econometrics, Excel financial modeling, Power BI, Tableau"
+      - name: Markets & regulation
+        icon: fa-solid fa-bolt
+        keywords: "CAISO and EDAM, Markets+, Washington Climate Commitment Act, ratemaking, resource adequacy, transmission permitting"
+
+    Languages:
+      - name: English
+        summary: "Fluent"
+      - name: Mandarin Chinese
+        summary: "Native"
+      - name: Spanish
+        summary: "Intermediate"
