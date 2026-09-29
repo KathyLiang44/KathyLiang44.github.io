@@ -85,8 +85,8 @@ cv:
         start_date: 2023-09
         end_date: 2024-05
         highlights:
-          - "California Office of Energy Infrastructure Safety: analyzed utility finance structures, ratemaking proceedings, and regulatory frameworks to identify financing mechanisms that distribute the cost of wildfire mitigation investments equitably."
-          - "California Energy Commission: analyzed federal permitting of interstate transmission, identified the institutional and regulatory barriers delaying projects, and proposed permitting reforms."
+          - "**California Office of Energy Infrastructure Safety:** analyzed utility finance structures, ratemaking proceedings, and regulatory frameworks to identify financing mechanisms that distribute the cost of wildfire mitigation investments equitably."
+          - "**California Energy Commission:** analyzed federal permitting of interstate transmission, identified the institutional and regulatory barriers delaying projects, and proposed permitting reforms."
 
     Projects:
       - name: Financing long-duration storage in California
