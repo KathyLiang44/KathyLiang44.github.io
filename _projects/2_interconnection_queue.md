@@ -2,8 +2,8 @@
 layout: page
 title: Predicting Which Interconnection Requests Reach Operation
 description: Led a machine learning project predicting which generation projects in CAISO's interconnection queue withdraw and which reach operation.
-img: assets/img/projects/queue_results.png
-og_image: /assets/img/projects/queue_results.png
+img: assets/img/projects/card_queue.png
+og_image: /assets/img/projects/card_queue.png
 importance: 3
 category: grid & financial modeling
 ---

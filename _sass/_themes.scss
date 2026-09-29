@@ -218,6 +218,40 @@ html[data-theme-setting="light"] {
 /* ---- Site design layer: olive, mauve, and dusty teal ----
  * Selectors start with `html` so they outrank the gem's rules, which load after this file. */
 :root {
+  /* Palette: three families, each a scale from 50 (lightest) to 800 (darkest).
+   * Olive is the major color, teal the accent, mauve the minor/hover color. */
+  --olive-50: #f3f5f0;
+  --olive-100: #e6e9e0;
+  --olive-200: #c9d0bc;
+  --olive-300: #a7b293;
+  --olive-400: #7e8f61;
+  --olive-500: #556b2f;
+  --olive-600: #495c2a;
+  --olive-700: #3e4c25;
+  --olive-800: #323d1f;
+  --mauve-50: #f6f3f6;
+  --mauve-100: #ece6eb;
+  --mauve-200: #d5cad4;
+  --mauve-300: #bba9ba;
+  --mauve-400: #9c829a;
+  --mauve-500: #7d5a7a;
+  --mauve-600: #6a4e67;
+  --mauve-700: #574255;
+  --mauve-800: #443542;
+  --teal-50: #f3f6f7;
+  --teal-100: #e5eced;
+  --teal-200: #c7d6d8;
+  --teal-300: #a3bcc0;
+  --teal-400: #799ea3;
+  --teal-500: #4f7f86;
+  --teal-600: #446c71;
+  --teal-700: #3a595c;
+  --teal-800: #2f4647;
+  --site-gradient: linear-gradient(90deg, var(--olive-500), var(--teal-500) 55%, var(--mauve-500));
+  --site-tint-gradient: linear-gradient(135deg, var(--teal-50), var(--olive-50) 60%, var(--mauve-50));
+  --fam-olive: var(--olive-600);
+  --fam-teal: var(--teal-600);
+  --fam-mauve: var(--mauve-600);
   --site-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
   --site-accent-ink: #3d666c;
   --site-warm-tint: #edf3f2;
@@ -225,6 +259,11 @@ html[data-theme-setting="light"] {
   --site-shadow: 0 10px 24px rgba(70, 58, 25, 0.1);
 }
 html[data-theme="dark"] {
+  --site-gradient: linear-gradient(90deg, var(--olive-300), var(--teal-300) 55%, var(--mauve-300));
+  --site-tint-gradient: linear-gradient(135deg, rgba(143, 192, 198, 0.1), rgba(163, 178, 147, 0.06) 60%, rgba(187, 169, 186, 0.08));
+  --fam-olive: var(--olive-300);
+  --fam-teal: var(--teal-300);
+  --fam-mauve: var(--mauve-300);
   --site-accent-ink: #8fc0c6;
   --site-warm-tint: rgba(143, 192, 198, 0.08);
   --site-border: #3b3b3f;
@@ -267,17 +306,26 @@ html article h2 {
 html article h2:not(.category):not(.card-title)::after {
   content: "";
   display: block;
-  width: 2.5rem;
+  width: 3.5rem;
   height: 3px;
   margin-top: 0.4rem;
   border-radius: 2px;
-  background-color: var(--site-accent-color);
+  background: var(--site-gradient);
 }
 
 /* Navbar */
 html #navbar {
   background-color: var(--global-bg-color);
   border-bottom: 1px solid var(--site-border);
+}
+html #navbar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--site-gradient);
 }
 html #navbar .nav-item.active > .nav-link {
   color: var(--global-theme-color) !important;
@@ -397,7 +445,7 @@ html .projects h2.category::before {
 
 /* "At a glance" boxes and other cards inside a page */
 html article > .card {
-  background: var(--site-warm-tint);
+  background: var(--site-tint-gradient);
   border: none;
   border-left: 4px solid var(--site-accent-color);
   border-radius: 10px;
@@ -466,11 +514,15 @@ html .social .contact-note {
 /* Footer */
 footer.fixed-bottom,
 footer.sticky-bottom {
-  background-color: #2b3122;
+  background:
+    var(--site-gradient) top / 100% 3px no-repeat,
+    var(--olive-800);
 }
 html[data-theme="dark"] footer.fixed-bottom,
 html[data-theme="dark"] footer.sticky-bottom {
-  background-color: #1d2117;
+  background:
+    var(--site-gradient) top / 100% 3px no-repeat,
+    #1d2117;
   color: #c9c9c9;
 }
 html footer a {
@@ -479,4 +531,47 @@ html footer a {
 
 html .projects .card-title::after {
   display: none !important;
+}
+
+/* Category families: utility & market operations = olive, grid & financial modeling = teal,
+ * policy & regulatory analysis = mauve. Cards pick up their family by project URL. */
+html .projects a#utility-market-operations h2.category {
+  color: var(--fam-olive);
+}
+html .projects a#utility-market-operations h2.category::before {
+  background: var(--olive-500);
+}
+html .projects a#grid-financial-modeling h2.category {
+  color: var(--fam-teal);
+}
+html .projects a#grid-financial-modeling h2.category::before {
+  background: var(--teal-500);
+}
+html .projects a#policy-regulatory-analysis h2.category {
+  color: var(--fam-mauve);
+}
+html .projects a#policy-regulatory-analysis h2.category::before {
+  background: var(--mauve-500);
+}
+html .projects a .card {
+  --fam: var(--teal-500);
+  border-top: 4px solid var(--fam);
+}
+html .projects a[href*="vpp_valuation"] .card,
+html .projects a[href*="ghg_compliance"] .card {
+  --fam: var(--olive-500);
+}
+html .projects a[href*="ldes_finance"] .card,
+html .projects a[href*="interconnection_queue"] .card,
+html .projects a[href*="offshore_wind"] .card {
+  --fam: var(--teal-500);
+}
+html .projects a[href*="transmission_permitting"] .card,
+html .projects a[href*="wildfire_financing"] .card,
+html .projects a[href*="housing_decarbonization"] .card {
+  --fam: var(--mauve-500);
+}
+html .projects a .card.hoverable:hover,
+html .projects a .card:hover {
+  border-color: var(--fam);
 }
