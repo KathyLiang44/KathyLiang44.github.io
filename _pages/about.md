@@ -39,7 +39,7 @@ After I graduate in May 2027, I'm looking for full-time roles that combine data-
 
 ## Current research
 
-At the Belfer Center, I'm studying what data center developers should disclose about public resources, and whether permitting captures the water used by the power plants that serve them.
+At the Belfer Center, I'm studying how much the public can learn about a data center's water and power use. I'm tracing where information stays out of view over a project's life, from site selection and land deals through permitting and decades of operation, to show where disclosure policy could make the biggest difference.
 
 ## If you're hiring for
 
