@@ -2,7 +2,6 @@
 layout: about
 title: about
 permalink: /
-subtitle: Master in Public Policy candidate, <a href='https://www.hks.harvard.edu/'>Harvard Kennedy School</a>. Background in energy markets, grid-level research, ISO & state stakeholder engagement, and state and local energy policy.
 
 profile:
   align: right
