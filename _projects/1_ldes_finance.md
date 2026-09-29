@@ -9,7 +9,7 @@ category: grid & financial modeling
 featured: 3
 ---
 
-_Individual project · Financing the Clean Energy Transition, Harvard Kennedy School, 2026_
+_Individual project · "Financing the Clean Energy Transition" class project, Harvard Kennedy School, 2026_
 
 <div class="card mt-3 mb-4">
   <div class="card-body">

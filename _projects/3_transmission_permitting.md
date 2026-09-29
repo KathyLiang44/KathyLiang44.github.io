@@ -9,7 +9,7 @@ category: policy & regulatory analysis
 featured: 2
 ---
 
-_With Nadiyah Helal and Anna Nyfeler · Client project for the California Energy Commission, PUBPOL 283, Goldman School of Public Policy, UC Berkeley, 2023–2024_
+_With Nadiyah Helal and Anna Nyfeler · Client project for the California Energy Commission (CEC), supervised by Mark Hesters and Sean Simon of the CEC and Steve Weissman of the Goldman School of Public Policy, UC Berkeley, 2023–2024_
 
 <div class="card mt-3 mb-4">
   <div class="card-body">
@@ -26,7 +26,7 @@ _With Nadiyah Helal and Anna Nyfeler · Client project for the California Energy
 
 ## The question
 
-California's clean energy targets depend on importing wind and solar from neighboring states, but interstate transmission lines regularly take more than a decade to permit. The Commission wanted to know what slows these projects down and what could speed them up. The instructor also shared the report with the CPUC's Public Advocates Office.
+California's clean energy targets depend on importing wind and solar from neighboring states, but interstate transmission lines regularly take more than a decade to permit. The Commission wanted to know what slows these projects down and what could speed them up. The final report was also shared with the CPUC's Public Advocates Office.
 
 ## What I did
 
