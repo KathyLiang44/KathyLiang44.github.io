@@ -60,6 +60,11 @@ on:
 permissions:
   contents: write
 
+# Run one deploy at a time so quick back-to-back pushes don't collide on gh-pages.
+concurrency:
+  group: deploy-site
+  cancel-in-progress: false
+
 jobs:
   deploy:
     # available images: https://github.com/actions/runner-images#available-images
