@@ -39,7 +39,7 @@ After I graduate in May 2027, I'm looking for full-time roles that combine data-
 
 ## Current research
 
-At the Belfer Center, I'm working with Professor Henry Lee on the public opposition that is delaying data center buildout. Much of that opposition stems from distrust, because residents can see so little about a project's water and power use. I'm tracing where that information stays out of public view, from site selection through decades of operation, and analyzing how disclosure reforms could rebuild trust and bring residents into local water and energy planning as collaborators rather than opponents.
+At the Belfer Center, I'm working with Professor Henry Lee on the public opposition that is delaying data center buildout. Much of that opposition stems from mistrust of the confidentiality that blurs a project's water and energy use. I'm tracing where that information stays out of public view, from site selection through decades of operation, and analyzing how disclosure reforms could rebuild trust and better engage residents in local water and energy planning.
 
 ## If you're hiring for
 
