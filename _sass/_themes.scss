@@ -1,6 +1,6 @@
 /*******************************************************************************
  * Local override of al_folio_core 1.0.15 _sass/_themes.scss
- * Changes: site palette "Olive & Mauve" with a warm ochre accent (#b8862b),
+ * Changes: site palette "Olive & Mauve" with a dusty teal accent (#4f7f86),
  *   plus a site design layer at the end of this file (serif headings, cards, links)
  *   and a warm off-white page background (#fbfaf6) in light mode
  *   olive #556b2f / light olive #a3b18a, mauve #7d5a7a / light mauve #d8bfd8
@@ -14,7 +14,7 @@
   color-scheme: light;
   --global-bg-color: #fbfaf6;
   --global-code-bg-color: rgba(85, 107, 47, 0.06);
-  --site-accent-color: #b8862b;
+  --site-accent-color: #4f7f86;
   --global-text-color: #{v.$black-color};
   --global-text-color-light: #{v.$grey-color};
   --global-theme-color: #556b2f;
@@ -88,7 +88,7 @@ html[data-theme="dark"] {
   --global-text-color: #{v.$grey-color-light};
   --global-text-color-light: #{v.$grey-color};
   --global-theme-color: #a3b18a;
-  --site-accent-color: #d9ab52;
+  --site-accent-color: #8fc0c6;
   --global-hover-color: #d8bfd8;
   --global-hover-text-color: #{v.$white-color};
   --global-footer-bg-color: #{v.$grey-color-light};
@@ -215,24 +215,24 @@ html[data-theme-setting="light"] {
   color: var(--global-theme-color);
 }
 
-/* ---- Site design layer: olive, mauve, and warm ochre ----
+/* ---- Site design layer: olive, mauve, and dusty teal ----
  * Selectors start with `html` so they outrank the gem's rules, which load after this file. */
 :root {
   --site-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
-  --site-ochre-ink: #8a6420;
-  --site-warm-tint: #f5efe2;
+  --site-accent-ink: #3d666c;
+  --site-warm-tint: #edf3f2;
   --site-border: #e7e1d3;
   --site-shadow: 0 10px 24px rgba(70, 58, 25, 0.1);
 }
 html[data-theme="dark"] {
-  --site-ochre-ink: #d9ab52;
-  --site-warm-tint: rgba(217, 171, 82, 0.08);
+  --site-accent-ink: #8fc0c6;
+  --site-warm-tint: rgba(143, 192, 198, 0.08);
   --site-border: #3b3b3f;
   --site-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
 }
 
 ::selection {
-  background: rgba(184, 134, 43, 0.25);
+  background: rgba(79, 127, 134, 0.22);
 }
 
 /* Headings in a serif to pair with the body sans */
@@ -287,13 +287,13 @@ html #navbar .nav-link:hover {
   color: var(--global-theme-color) !important;
 }
 
-/* Links in running text: olive with an ochre underline */
+/* Links in running text: olive with a teal underline */
 html article p a,
 html article li a,
 html article td a,
 html .post-header a {
   text-decoration: underline;
-  text-decoration-color: rgba(184, 134, 43, 0.55);
+  text-decoration-color: rgba(79, 127, 134, 0.55);
   text-decoration-thickness: 1.5px;
   text-underline-offset: 3px;
 }
@@ -309,7 +309,7 @@ html article ul > li::marker {
   color: var(--site-accent-color);
 }
 html article ol > li::marker {
-  color: var(--site-ochre-ink);
+  color: var(--site-accent-ink);
   font-weight: 600;
 }
 
@@ -408,7 +408,7 @@ html article > .card .table td {
   background: transparent;
 }
 html article > .card .text-muted {
-  color: var(--site-ochre-ink) !important;
+  color: var(--site-accent-ink) !important;
   font-weight: 600;
 }
 html article .table-sm th {
@@ -474,7 +474,7 @@ html[data-theme="dark"] footer.sticky-bottom {
   color: #c9c9c9;
 }
 html footer a {
-  color: #e2c07a !important;
+  color: #a9d0d4 !important;
 }
 
 html .projects .card-title::after {
