@@ -5,7 +5,7 @@ description: Helped a public power utility decide how to launch its first virtua
 img: assets/img/projects/card_vpp.png
 og_image: /assets/img/projects/card_vpp.png
 importance: 1
-category: grid & financial modeling
+category: utility & market operations
 featured: 1
 ---
 

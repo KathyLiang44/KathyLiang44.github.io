@@ -43,8 +43,8 @@ At the Belfer Center, I'm studying how much the public can learn about a data ce
 
 ## If you're hiring for
 
-- **A utility or ISO/RTO:** see [utility & market operations]({{ '/projects/' | relative_url }}#utility-market-operations), including carbon compliance and allowance market strategy.
-- **An energy consultancy:** see [grid & financial modeling]({{ '/projects/' | relative_url }}#grid-financial-modeling), including VPP valuation, project finance, and siting optimization.
+- **A utility or ISO/RTO:** see [utility & market operations]({{ '/projects/' | relative_url }}#utility-market-operations), including virtual power plant valuation and carbon compliance strategy.
+- **An energy consultancy:** see [grid & financial modeling]({{ '/projects/' | relative_url }}#grid-financial-modeling), including project finance, siting optimization, and interconnection queue modeling.
 - **A regulator or policy office:** see [policy & regulatory analysis]({{ '/projects/' | relative_url }}#policy-regulatory-analysis) and my [writing samples]({{ '/writing/' | relative_url }}).
 
 My full background is on my [CV]({{ '/cv/' | relative_url }}).
