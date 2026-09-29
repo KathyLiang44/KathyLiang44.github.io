@@ -11,9 +11,9 @@ horizontal: false
 
 Projects are grouped by the kind of work they show:
 
-- **[Utility & market operations](#utility-market-operations)**: carbon compliance and allowance markets. Most relevant for utilities, ISOs/RTOs, and trading teams.
-- **[Grid & financial modeling](#grid-financial-modeling)**: VPP valuation, project finance, and resource siting optimization. Most relevant for energy consulting, resource planning, and regulatory staff roles.
-- **[Policy & regulatory analysis](#policy-regulatory-analysis)**: client reports for state agencies. Most relevant for regulators, legislative offices, and advocacy organizations.
+- **[Utility & market operations](#utility-market-operations)**: virtual power plant valuation, carbon compliance, and allowance markets. Most relevant for utilities, ISOs/RTOs, and trading teams.
+- **[Grid & financial modeling](#grid-financial-modeling)**: project finance, resource siting optimization, and interconnection queue modeling. Most relevant for energy consulting, resource planning, and regulatory staff roles.
+- **[Policy & regulatory analysis](#policy-regulatory-analysis)**: client reports and research for state agencies. Most relevant for regulators, legislative offices, and advocacy organizations.
 
 <!-- pages/projects.md -->
 <div class="projects">

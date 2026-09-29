@@ -1,6 +1,7 @@
 /*******************************************************************************
  * Local override of al_folio_core 1.0.15 _sass/_themes.scss
- * Changes: site palette "Olive & Mauve"
+ * Changes: site palette "Olive & Mauve" with a warm ochre accent (#b8862b)
+ *   and a warm off-white page background (#fbfaf6) in light mode
  *   olive #556b2f / light olive #a3b18a, mauve #7d5a7a / light mauve #d8bfd8
  * Everything else is unchanged from the gem. When al_folio_core is updated,
  * compare this file with the new upstream version.
@@ -10,8 +11,9 @@
 
 :root {
   color-scheme: light;
-  --global-bg-color: #{v.$white-color};
+  --global-bg-color: #fbfaf6;
   --global-code-bg-color: rgba(85, 107, 47, 0.06);
+  --site-accent-color: #b8862b;
   --global-text-color: #{v.$black-color};
   --global-text-color-light: #{v.$grey-color};
   --global-theme-color: #556b2f;
@@ -85,6 +87,7 @@ html[data-theme="dark"] {
   --global-text-color: #{v.$grey-color-light};
   --global-text-color-light: #{v.$grey-color};
   --global-theme-color: #a3b18a;
+  --site-accent-color: #d9ab52;
   --global-hover-color: #d8bfd8;
   --global-hover-text-color: #{v.$white-color};
   --global-footer-bg-color: #{v.$grey-color-light};
@@ -209,4 +212,24 @@ html[data-theme-setting="light"] {
 
 #light-toggle:hover .fa-half-sun-moon::after {
   color: var(--global-theme-color);
+}
+
+/* Site accent: warm ochre rule under section headings and category headings */
+article h2:not(.category)::after {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 3px;
+  margin-top: 0.35rem;
+  border-radius: 2px;
+  background-color: var(--site-accent-color);
+}
+
+.projects h2.category {
+  color: var(--site-accent-color);
+  border-bottom: 2px solid var(--site-accent-color);
+}
+
+blockquote {
+  border-left-color: var(--site-accent-color);
 }
