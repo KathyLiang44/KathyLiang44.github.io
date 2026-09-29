@@ -23,8 +23,7 @@ cv:
 
       - institution: University of California, Berkeley
         location: Berkeley, CA
-        area: Environmental Science, Minor in Energy and Resources
-        studyType: B.S.
+        studyType: B.S. Environmental Science, Minor in Energy and Resources
         start_date: 2021-08
         end_date: 2025-05
         courses: "Econometrics; Energy Engineering; Utility Regulation & Ratemaking; Federal and State Energy Policy; Machine Learning"
