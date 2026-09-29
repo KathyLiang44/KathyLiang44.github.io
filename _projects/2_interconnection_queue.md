@@ -1,14 +1,14 @@
 ---
 layout: page
 title: Predicting Which Interconnection Requests Reach Operation
-description: Led a machine learning project on CAISO's generation interconnection queue, predicting which projects withdraw and which get built, mentored by a CAISO interconnection specialist.
+description: Led a machine learning project predicting which generation projects in CAISO's interconnection queue withdraw and which reach operation.
 img: assets/img/projects/queue_results.png
 og_image: /assets/img/projects/queue_results.png
-importance: 4
+importance: 3
 category: grid & financial modeling
 ---
 
-_Project lead, with Claire Liu, Ke Hu, and Sindre Iversen Carlsen · Mentored by Linda Wright, Lead Interconnection Specialist, CAISO · ER 131 Data, Environment and Society, UC Berkeley, 2023_
+_Project lead, with Claire Liu, Ke Hu, and Sindre Iversen Carlsen · Mentored by Linda Wright, Lead Interconnection Specialist, CAISO · ER 131 (Data, Environment and Society) class project, UC Berkeley, 2023_
 
 <div class="card mt-3 mb-4">
   <div class="card-body">
@@ -25,7 +25,7 @@ _Project lead, with Claire Liu, Ke Hu, and Sindre Iversen Carlsen · Mentored by
 
 ## The question
 
-Two out of three requests in CAISO's generation interconnection queue withdraw before connecting to the grid. Each withdrawal can trigger restudies for the projects behind it, slowing down the ones that are viable. We asked whether public data can predict which requests will reach commercial operation, so CAISO can prioritize likely projects and plan transmission around them.
+Two out of three requests in CAISO's generation interconnection queue withdraw before connecting to the grid. Each withdrawal can trigger restudies for the projects behind it, slowing down the ones that are viable. We asked whether public data can predict which requests will reach commercial operation, so grid operators can prioritize viable projects and plan transmission around them.
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-12 mt-3 mt-md-0">
@@ -69,27 +69,32 @@ Two out of three requests in CAISO's generation interconnection queue withdraw b
 
 ## Code highlights
 
-Excerpts from the team's final notebook (my prediction question), lightly trimmed.
+Excerpts from my part of the team's final notebook, lightly trimmed for readability.
 
 **Preventing leakage and building features.** Withdrawn projects keep their original online date, so that field would reveal the outcome:
 
 ```python
 # 'Current On-line Date' equals the proposed date for every withdrawn project,
 # so it leaks the outcome and is dropped
-merged_df["Duration between Queue & Online"] = (
-    merged_df["Proposed Online Year"] - merged_df["Year of Queue"])
-merged_df = merged_df.drop(columns=["Current On-line Date", "Year of Queue",
-                                    "Proposed Online Year", "Interconnection Agreement Status"])
-model_df["Application Status"] = model_df["Application Status"].map({"COMPLETED": 1, "WITHDRAWN": 0})
+df["Duration between Queue & Online"] = (
+    df["Proposed Online Year"] - df["Year of Queue"])
+df = df.drop(columns=["Current On-line Date", "Year of Queue",
+                      "Proposed Online Year",
+                      "Interconnection Agreement Status"])
+df["Application Status"] = df["Application Status"].map(
+    {"COMPLETED": 1, "WITHDRAWN": 0})
 ```
 
 **Tuning with cross-validated grid search:**
 
 ```python
-param_grid = {"n_estimators": [100, 200], "max_depth": [10, 20, None],
-              "min_samples_split": [2, 5], "min_samples_leaf": [1, 2],
+param_grid = {"n_estimators": [100, 200],
+              "max_depth": [10, 20, None],
+              "min_samples_split": [2, 5],
+              "min_samples_leaf": [1, 2],
               "max_features": ["sqrt", "log2", None]}
-grid_search = GridSearchCV(RandomForestClassifier(random_state=2023), param_grid, cv=5, n_jobs=-1)
+grid_search = GridSearchCV(RandomForestClassifier(random_state=2023),
+                           param_grid, cv=5, n_jobs=-1)
 grid_search.fit(X_train_smote, y_train_smote)
 ```
 
@@ -100,7 +105,7 @@ smote = SMOTE(random_state=42)
 X_train_smote, y_train_smote = smote.fit_resample(X_train_smaller, y_train_smaller)
 
 y_pred = best_lr_smote.predict(X_test)
-print(classification_report(y_test, y_pred))   # recall for completed projects: 0.48
+print(classification_report(y_test, y_pred))  # completed-project recall: 0.48
 print(confusion_matrix(y_test, y_pred))
 ```
 

@@ -4,7 +4,7 @@ title: Financing Long-Duration Storage in California
 description: A 20-year project finance model testing which policies get a 500 MW / 50 GWh iron-air battery to financial close.
 img: assets/img/projects/card_ldes.png
 og_image: /assets/img/projects/card_ldes.png
-importance: 3
+importance: 2
 category: grid & financial modeling
 featured: 3
 ---

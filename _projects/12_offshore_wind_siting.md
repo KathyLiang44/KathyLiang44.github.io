@@ -4,7 +4,7 @@ title: Optimizing Offshore Wind Siting in California
 description: Led a five-person team that built a Python optimization model to site offshore wind turbines off California, balancing wind output against ecological impacts, shipping congestion, and grid constraints.
 img: assets/img/projects/card_osw.png
 og_image: /assets/img/projects/card_osw.png
-importance: 2
+importance: 4
 category: grid & financial modeling
 ---
 
