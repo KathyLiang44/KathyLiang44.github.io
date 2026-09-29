@@ -23,13 +23,11 @@ cv:
 
       - institution: University of California, Berkeley
         location: Berkeley, CA
-        area: Environmental Science
-        studyType: B.Sc.
+        area: Environmental Science, Minor in Energy and Resources
+        studyType: B.S.
         start_date: 2021-08
         end_date: 2025-05
         courses: "Econometrics; Energy Engineering; Utility Regulation & Ratemaking; Federal and State Energy Policy; Machine Learning"
-        highlights:
-          - "Minor: Energy and Resources"
 
     Experience:
       - company: Belfer Center for Science and International Affairs, Harvard Kennedy School
