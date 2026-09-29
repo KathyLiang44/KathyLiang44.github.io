@@ -2,14 +2,14 @@
 layout: about
 title: about
 permalink: /
-subtitle: Master in Public Policy candidate, <a href='https://www.hks.harvard.edu/'>Harvard Kennedy School</a>. Energy markets, utility regulation, and grid finance.
+subtitle: Master in Public Policy candidate, <a href='https://www.hks.harvard.edu/'>Harvard Kennedy School</a>. Background in energy markets, grid-level research, ISO & state stakeholder engagement, and state and local energy policy.
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Cambridge, MA</p>
+    <p>Currently in Cambridge, MA</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -21,15 +21,11 @@ latest_posts:
   enabled: false
 ---
 
-I'm Kathy, a Master in Public Policy candidate at Harvard Kennedy School. I work on electricity markets, utility regulation, and how new grid resources get financed.
+I'm Kathy, a Master in Public Policy candidate at Harvard Kennedy School. I've worked on grid decarbonization from several sides of the table: resource procurement under greenhouse gas compliance obligations at an electric utility, grid research using machine learning and optimization, regulatory analysis for state agencies and municipalities, and ratepayer advocacy with a California nonprofit.
 
-At [Seattle City Light](https://www.seattle.gov/city-light), I developed the utility's virtual power plant valuation framework and led carbon compliance analysis under Washington's Climate Commitment Act, work that saved ratepayers more than $1M. I also represented the utility in stakeholder processes on EDAM and Markets+.
+Seeing the same problem from each of those seats taught me that robust, data-driven analysis is only the first step. Lasting solutions also need people who understand the public interest, what regulators can approve, and how industry puts plans into practice, and who can build support across all three for a grid that is more reliable, affordable, and climate resilient. That's the kind of practitioner I want to be.
 
-At HKS, I'm a research assistant at the Belfer Center studying how data centers affect water and power systems. Earlier this year, I worked with the Town of Acton on non-pipeline alternatives to gas infrastructure, building a benefit-cost analysis of heat pump pilots with National Grid.
-
-At UC Berkeley, I studied environmental science and did econometric research on how power plant outages affect CAISO prices at the [Energy Institute at Haas](https://haas.berkeley.edu/energy-institute/). I also worked with the California Air Resources Board on equitable home electrification, and on Goldman School client projects for the California Energy Commission and the Office of Energy Infrastructure Safety.
-
-I'm looking for full-time roles with utilities, regulators, and energy consulting firms after I graduate in May 2027.
+After I graduate in May 2027, I'm looking for full-time roles that combine data-driven analysis, regulation, and stakeholder engagement, whether at a utility, consultancy, regulator, independent power producer, or transmission developer.
 
 ## Selected work
 
