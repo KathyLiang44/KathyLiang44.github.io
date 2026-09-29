@@ -23,6 +23,11 @@ Much of my work was written for a client or employer, so I share it by request r
       <td>On request</td>
     </tr>
     <tr>
+      <td><a href="{% link _projects/7_housing_decarbonization.md %}">The equity gap in California's home electrification programs</a><br><small class="text-muted">UC Berkeley research for the California Air Resources Board, 2026. I led the stakeholder interviews.</small></td>
+      <td>Research report</td>
+      <td><a href="https://ww2.arb.ca.gov/equitable-housing-decarbonization-implementation-approaches">Public</a></td>
+    </tr>
+    <tr>
       <td><a href="{% link _projects/1_ldes_finance.md %}">Financing long-duration storage in California</a><br><small class="text-muted">Financing the Clean Energy Transition, Harvard Kennedy School, 2026</small></td>
       <td>Policy memo</td>
       <td>On request</td>
