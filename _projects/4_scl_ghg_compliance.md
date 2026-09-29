@@ -4,7 +4,7 @@ title: Greenhouse Gas Compliance Strategy for a Public Power Utility
 description: Helped a public power utility move from reactive to proactive carbon compliance under Washington's cap-and-invest program, from shaping state rules to allowance auction strategy.
 img: assets/img/projects/card_ghg.png
 og_image: /assets/img/projects/card_ghg.png
-importance: 1
+importance: 2
 category: utility & market operations
 featured: 4
 ---
