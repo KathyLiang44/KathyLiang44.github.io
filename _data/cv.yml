@@ -3,7 +3,7 @@ cv:
   email: yliang@hks.harvard.edu
   location: Cambridge, MA
   image: ""
-  summary: MPP candidate at Harvard Kennedy School working on electricity markets, utility regulation, and grid finance.
+  summary: MPP candidate at Harvard Kennedy School working on grid decarbonization across utility, regulatory, research, and advocacy settings.
 
   social_networks:
     - network: GitHub
@@ -123,6 +123,6 @@ cv:
       - name: English
         summary: "Fluent"
       - name: Mandarin Chinese
-        summary: "Native"
+        summary: "Fluent"
       - name: Spanish
         summary: "Intermediate"
