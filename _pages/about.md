@@ -39,7 +39,7 @@ After I graduate in May 2027, I'm looking for full-time roles that combine data-
 
 ## Current research
 
-At the Belfer Center, I'm studying how much the public can learn about a data center's water and power use. I'm tracing where information stays out of view over a project's life, from site selection and land deals through permitting and decades of operation, to show where disclosure policy could make the biggest difference.
+At the Belfer Center, I'm working with Professor Henry Lee on the public opposition that is delaying data center buildout. I'm tracing where information about a project's water and power use stays out of public view, from site selection through decades of operation, and analyzing disclosure rules that would let communities take part in local water and energy planning decisions earlier.
 
 ## If you're hiring for
 
