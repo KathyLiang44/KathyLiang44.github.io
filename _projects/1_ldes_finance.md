@@ -2,8 +2,8 @@
 layout: page
 title: Financing Long-Duration Storage in California
 description: A 20-year project finance model testing which policies get a 500 MW / 50 GWh iron-air battery to financial close.
-img: assets/img/projects/card_ldes.png
-og_image: /assets/img/projects/card_ldes.png
+img: assets/img/projects/card_ldes_context.png
+og_image: /assets/img/projects/card_ldes_context.png
 importance: 2
 category: grid & financial modeling
 featured: 3
@@ -34,11 +34,20 @@ I built a 20-year project finance model for a 500 MW / 50 GWh iron-air battery, 
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-12 mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/projects/card_ldes.png" title="Equity IRR by capacity contract price" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid loading="eager" path="assets/img/projects/ldes_policies.png" title="Five-policy package for long-duration storage" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">
-  Equity IRR across capacity contract prices under both ITC levels, with the other four policies in place.
+  The five policies tested in the model, the barrier each removes, who acts, and its effect on the project.
+</div>
+
+<div class="row justify-content-sm-center">
+  <div class="col-sm-12 mt-3 mt-md-0">
+    {% include figure.liquid loading="lazy" path="assets/img/projects/ldes_cashflow.png" title="Year-one cash flow" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+<div class="caption">
+  First operating year with all five policies in place: the capacity contract supplies about three-quarters of revenue.
 </div>
 
 ## What it shows
