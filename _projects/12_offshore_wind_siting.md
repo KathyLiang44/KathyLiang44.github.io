@@ -2,8 +2,8 @@
 layout: page
 title: Optimizing Offshore Wind Siting in California
 description: Led a five-person team that built a Python optimization model to site offshore wind turbines off California, balancing wind output against ecological impacts, shipping congestion, and grid constraints.
-img: assets/img/projects/card_osw.png
-og_image: /assets/img/projects/card_osw.png
+img: assets/img/projects/card_osw_results.png
+og_image: /assets/img/projects/card_osw_results.png
 importance: 4
 category: grid & financial modeling
 ---
@@ -36,11 +36,11 @@ California plans 25 GW of offshore wind by 2045. The state's siting work relied 
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-12 mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/projects/osw_siting.png" title="Offshore wind siting scores compared with CEC suitable sea space" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid loading="eager" path="assets/img/projects/card_osw_results.png" title="Offshore wind siting results" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">
-  Siting scores with equal weights (left) and optimized weights (center), compared with the CEC's AB 525 suitable sea space (right; source: CEC, 2023). Red is more suitable.
+  Top-scoring 2.75 km cells (score ≥ 0.8) from the team's optimization, compared with the California Energy Commission's candidate areas.
 </div>
 
 ## What it shows

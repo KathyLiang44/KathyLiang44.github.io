@@ -38,11 +38,20 @@ Electricity demand in the Pacific Northwest is growing faster than new power pla
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-12 mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/projects/card_vpp.png" title="Illustrative benefit stack" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid loading="eager" path="assets/img/projects/vpp_value_cost.png" title="VPP value stack and cost stack" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">
-  Benefits and costs from the model run with illustrative inputs, not the utility's results.
+  Value and cost stack for a hypothetical 100 MW EV managed charging program, scaled from the model's per-kW values. Totals are rescaled to protect the utility's confidential results.
+</div>
+
+<div class="row justify-content-sm-center">
+  <div class="col-sm-12 mt-3 mt-md-0">
+    {% include figure.liquid loading="lazy" path="assets/img/projects/card_vpp_stakeholders.png" title="Utility stakeholder map for VPP implementation" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+<div class="caption">
+  The internal teams a utility needs to value, run and approve a first VPP program, from the author's experience in a cross-department working group.
 </div>
 
 ## What it shows
