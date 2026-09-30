@@ -34,7 +34,7 @@ I built a 20-year project finance model for a 500 MW / 50 GWh iron-air battery, 
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-12 mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/projects/ldes_policies.png" title="Five-policy package for long-duration storage" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid zoomable=true loading="eager" path="assets/img/projects/ldes_policies.png" title="Five-policy package for long-duration storage" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">
@@ -43,7 +43,7 @@ I built a 20-year project finance model for a 500 MW / 50 GWh iron-air battery, 
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-12 mt-3 mt-md-0">
-    {% include figure.liquid loading="lazy" path="assets/img/projects/ldes_cashflow.png" title="Year-one cash flow" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid zoomable=true loading="lazy" path="assets/img/projects/ldes_cashflow.png" title="Year-one cash flow" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">

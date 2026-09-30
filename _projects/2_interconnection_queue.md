@@ -2,8 +2,8 @@
 layout: page
 title: Predicting Which Interconnection Requests Reach Operation
 description: Led a machine learning project predicting which generation projects in CAISO's interconnection queue withdraw and which reach operation.
-img: assets/img/projects/card_queue.png
-og_image: /assets/img/projects/card_queue.png
+img: assets/img/projects/card_queue_pipeline.png
+og_image: /assets/img/projects/card_queue_pipeline.png
 importance: 3
 category: grid & financial modeling
 ---
@@ -29,43 +29,46 @@ Two out of three requests in CAISO's generation interconnection queue withdraw b
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-12 mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/projects/queue_requests_by_year.png" title="Interconnection requests by year" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid zoomable=true loading="eager" path="assets/img/projects/card_queue_pipeline.png" title="Queue outcomes and modeling pipeline" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">
-  Interconnection requests entering the CAISO queue each year, from the CAISO-controlled grid generation queue.
+  Where queue requests end up, and the five steps from raw queue data to a model chosen for the planning decision.
 </div>
 
 ## What I did
 
 1. **Led the project.** Proposed the motivation, found all six datasets, framed the three prediction questions, divided the work, and wrote most of the background and data sections of the final report.
-2. **Built the dataset.** Merged CAISO queue records (size, technology, fuel, utility, county, dates) with state generation and consumption data and CAISO's network upgrade reimbursement rates, and dropped a field that leaked the outcome.
-3. **Built and compared the models.** Trained decision tree, random forest, and logistic regression classifiers for the main question (withdraw or complete), tuned each with cross-validated grid search, and compared them on accuracy, ROC curves, and confusion matrices.
-4. **Tackled the class imbalance.** Only about 1 in 6 decided requests reached operation, so the first models never predicted a completion. I rebalanced the training data with SMOTE and chose the final model on its ability to find completions.
+2. **Built the dataset.** Merged CAISO queue records with state generation and consumption data and CAISO's network upgrade reimbursement rates, and caught a field that leaked the outcome (see the code below).
+3. **Built and compared the models.** Trained and tuned decision tree, random forest, and logistic regression classifiers for the main question: will a request withdraw or reach operation?
+4. **Tackled the class imbalance.** Only about 1 in 6 decided requests reached operation, so the first models never predicted a completion. I rebalanced the training data with SMOTE and chose the final model on how many completions it found.
 
 ## What it shows
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-12 mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/projects/queue_results.png" title="Test-set confusion matrices" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid zoomable=true loading="lazy" path="assets/img/projects/queue_model_results.png" title="Test-set confusion matrices" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">
-  Confusion matrices on the held-out test set of 159 requests.
+  Held-out test set of 159 decided requests, 27 of which reached operation.
 </div>
 
-- **Accuracy alone misleads.** The tuned random forest scored 83% accuracy while identifying none of the 27 projects that reached operation.
-- **The right model depends on the decision.** With SMOTE, logistic regression found 13 of 27 completions (recall 0.48) at the cost of more false alarms (precision 0.22). The random forest was more precise but found only 4.
-- **There is signal to work with.** On the validation set, the random forest separated completions from withdrawals with an ROC AUC of 0.74.
+- **Accuracy is the wrong yardstick.** With so few completions, betting that every project withdraws looks accurate but tells a planner nothing. Rebalancing with SMOTE is what let the models find completions at all.
 
 <div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/projects/queue_roc.png" title="ROC curve" class="img-fluid rounded z-depth-1" %}
+  <div class="col-sm-12 mt-3 mt-md-0">
+    {% include figure.liquid zoomable=true loading="lazy" path="assets/img/projects/queue_tradeoffs.png" title="Model trade-offs and top predictors" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">
-  ROC curves on the validation set, before rebalancing.
+  Recall and precision for completed projects on the test set, and the strongest predictors in the decision tree.
 </div>
+
+- **Match the model to the decision.** No single model wins. The choice depends on whether a missed viable project or a wasted study costs the grid operator more.
+- **There is signal to build on.** Project size, local energy demand, and the proposed timeline carry the most information, a starting point for a screening tool built on data known at filing.
+
+_We completed this project in 2023 using the CAISO queue data available at the time. Queue rules have changed since, including FERC Order 2023 and CAISO's interconnection process enhancements, so the results describe the queue as it was then._
 
 ## Code highlights
 
@@ -108,8 +111,6 @@ y_pred = best_lr_smote.predict(X_test)
 print(classification_report(y_test, y_pred))  # completed-project recall: 0.48
 print(confusion_matrix(y_test, y_pred))
 ```
-
-_We completed this project in 2023 as a four-person course project, using the CAISO queue data available at the time. Queue rules and data have changed since, including FERC Order 2023 and CAISO's interconnection process enhancements, so the results describe the queue as it was then._
 
 ## What I'd do differently
 

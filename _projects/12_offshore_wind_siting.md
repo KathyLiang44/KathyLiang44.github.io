@@ -36,7 +36,7 @@ California plans 25 GW of offshore wind by 2045. The state's siting work relied 
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-12 mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/projects/osw_model.png" title="Offshore wind siting model design" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid zoomable=true loading="eager" path="assets/img/projects/osw_model.png" title="Offshore wind siting model design" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">
@@ -45,7 +45,7 @@ California plans 25 GW of offshore wind by 2045. The state's siting work relied 
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-12 mt-3 mt-md-0">
-    {% include figure.liquid loading="lazy" path="assets/img/projects/card_osw_results.png" title="Offshore wind siting results" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid zoomable=true loading="lazy" path="assets/img/projects/card_osw_results.png" title="Offshore wind siting results" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">

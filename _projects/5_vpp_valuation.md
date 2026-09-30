@@ -38,7 +38,7 @@ Electricity demand in the Pacific Northwest is growing faster than new power pla
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-12 mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/projects/vpp_value_cost.png" title="VPP value stack and cost stack" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid zoomable=true loading="eager" path="assets/img/projects/vpp_value_cost.png" title="VPP value stack and cost stack" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">
@@ -47,7 +47,7 @@ Electricity demand in the Pacific Northwest is growing faster than new power pla
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-12 mt-3 mt-md-0">
-    {% include figure.liquid loading="lazy" path="assets/img/projects/card_vpp_stakeholders.png" title="Utility stakeholder map for VPP implementation" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid zoomable=true loading="lazy" path="assets/img/projects/card_vpp_stakeholders.png" title="Utility stakeholder map for VPP implementation" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">
