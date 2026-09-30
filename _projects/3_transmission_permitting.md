@@ -2,8 +2,8 @@
 layout: page
 title: Accelerating Interstate Transmission for California
 description: A client report for the California Energy Commission on why interstate lines take a decade or more to permit, and which reforms could shorten that.
-img: assets/img/projects/card_transmission.png
-og_image: /assets/img/projects/card_transmission.png
+img: assets/img/projects/card_tx_timeline.png
+og_image: /assets/img/projects/card_tx_timeline.png
 importance: 1
 category: policy & regulatory analysis
 featured: 2
@@ -28,22 +28,45 @@ _Prepared for Mark Hesters and Sean Simon of the California Energy Commission (C
 
 California's clean energy targets depend on importing wind and solar from neighboring states, but interstate transmission lines regularly take more than a decade to permit. The Commission wanted to know what slows these projects down and what could speed them up. The final report was also shared with the CPUC's Public Advocates Office.
 
+<div class="row justify-content-sm-center">
+  <div class="col-sm-12 mt-3 mt-md-0">
+    {% include figure.liquid zoomable=true loading="eager" path="assets/img/projects/card_tx_timeline.png" title="Transmission permitting timelines" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+<div class="caption">
+  Milestones for the two lines in our case studies, from first filing to construction or service.
+</div>
+
 ## What I did
 
 1. **Case studies.** I analyzed two lines that made it through federal permitting: Ten West Link (Arizona to California) and TransWest Express (Wyoming to Nevada). The analysis traces how federal route planning, review split across several land management agencies, and cost-containment disputes added years to each project, and what the federal Permitting Council and the Rapid Response Team for Transmission did to coordinate reviews.
 2. **Policy assessment.** With Anna Nyfeler, I assessed newer tools: DOE's National Interest Electric Transmission Corridor designations, the CITAP permitting program, federal backstop siting authority, NEPA reform, and changes to interregional cost allocation.
 
+## What it shows
+
+Delays came less from any single review than from coordination across agencies and from disputes over who pays.
+
 <div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/projects/transwest_map.jpg" title="TransWest Express corridor alternatives" class="img-fluid rounded z-depth-1" %}
+  <div class="col-sm-12 mt-3 mt-md-0">
+    {% include figure.liquid zoomable=true loading="lazy" path="assets/img/projects/tx_bottlenecks.png" title="Two permitting bottlenecks" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">
-  TransWest Express corridor alternatives. Source: BLM and Western Area Power Administration, TransWest Express EIS (2015).
+  Ten West Link: the agencies that had to sign off, and the cost dispute still open at FERC.
 </div>
 
-## What it shows
+- **Coordination is the first bottleneck.** Every added agency brings its own schedule and record, so reviews wait on each other.
+- **Cost allocation is the second.** When no one has settled who pays for overruns, the dispute can outlast construction itself.
 
-Delays came less from any single review than from coordination across agencies and from disputes over who pays. That points to reforms that coordinate reviews and settle cost allocation early.
+<div class="row justify-content-sm-center">
+  <div class="col-sm-12 mt-3 mt-md-0">
+    {% include figure.liquid zoomable=true loading="lazy" path="assets/img/projects/tx_reforms.png" title="Federal permitting reform toolkit" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+<div class="caption">
+  Federal tools mapped to the bottlenecks they address. Our report assessed them in 2024; status is updated to September 2026.
+</div>
+
+- **Reforms should coordinate reviews and settle cost allocation early.** Federal tools now cover coordination and review time, but interregional cost allocation still has no answer.
 
 _The full report was prepared for the Commission. A nine-page excerpt of my section is available as a writing sample on request. [Contact me](mailto:yliang@hks.harvard.edu)._
