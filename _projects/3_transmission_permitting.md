@@ -9,7 +9,7 @@ category: policy & regulatory analysis
 featured: 2
 ---
 
-_With Nadiyah Helal and Anna Nyfeler · Client project for the California Energy Commission (CEC), supervised by Mark Hesters and Sean Simon of the CEC and Steve Weissman of the Goldman School of Public Policy, UC Berkeley, 2023–2024_
+_Prepared for Mark Hesters and Sean Simon of the California Energy Commission (CEC) · With Nadiyah Helal and Anna Nyfeler · Supervised by Steve Weissman of the Goldman School of Public Policy, UC Berkeley, 2023–2024_
 
 <div class="card mt-3 mb-4">
   <div class="card-body">
