@@ -2,8 +2,8 @@
 layout: page
 title: Developing a Utility's First Virtual Power Plant Valuation Framework
 description: Helped a public power utility decide how to launch its first virtual power plant, and built the 20-year benefit-cost model used to make the case to leadership.
-img: assets/img/projects/card_vpp.png
-og_image: /assets/img/projects/card_vpp.png
+img: assets/img/projects/card_vpp_stakeholders.png
+og_image: /assets/img/projects/card_vpp_stakeholders.png
 importance: 1
 category: utility & market operations
 featured: 1
